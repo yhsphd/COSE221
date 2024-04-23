@@ -1,4 +1,4 @@
-// Test Bench - prac1_gates
+// Test Bench - prac1
 
 `timescale 1ns/1ns
 
