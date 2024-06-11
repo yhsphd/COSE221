@@ -1,0 +1,17 @@
+첨부된 파일:
+
+    파일 clk_dll.v (489 bytes)
+    파일 counter.v (376 bytes)
+    파일 seg7.v (514 bytes)
+    파일 tb_top_seg7.v (216 bytes)
+    파일 top_seg7.v (307 bytes) 
+
+FPGA 실습을 위한 Code 입니다.
+
+실제 실습 합성 Code는 아래 4개이고, 가장 마지막 코드는 검증을 위한 테스트벤치 코드 입니다.
+  - clk_dll.v : 50MHz -> 1Hz 클럭 변환기
+  - counter.v : 4bit  counter(0~9)
+  - seg7.v : 7-Segment decoder
+  - top_seg7v.v : 위의 3개 모듈 합친 top module
+
+  - tb_top_seg7.v : ModelSim에서 검증을 위한 test bench code로 실지 FPGA 키트 활용시는 필요없음
