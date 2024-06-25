@@ -99,6 +99,8 @@ set_location_assignment PIN_AG20 -to seg_h10[3]
 set_location_assignment PIN_AE19 -to seg_h10[4]
 set_location_assignment PIN_AF19 -to seg_h10[5]
 set_location_assignment PIN_AB21 -to seg_h10[6]
-set_location_assignment PIN_AJ4 -to toggle
-set_location_assignment PIN_Y27 -to quick
+set_location_assignment PIN_AA30 -to quick[3]
+set_location_assignment PIN_AC29 -to quick[2]
+set_location_assignment PIN_AD30 -to quick[1]
+set_location_assignment PIN_AC28 -to quick[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

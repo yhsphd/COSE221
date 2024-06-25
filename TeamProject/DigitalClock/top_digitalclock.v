@@ -2,7 +2,6 @@ module top_digitalclock (
     rst,
     clk,
     quick,
-    toggle,
     seg_s1,
     seg_s10,
     seg_m1,
@@ -11,7 +10,8 @@ module top_digitalclock (
     seg_h10
 );
 
-  input rst, clk, quick, toggle;
+  input rst, clk;
+  input [3:0] quick;
   output [6:0] seg_s1, seg_s10, seg_m1, seg_m10, seg_h1, seg_h10;
 
   wire [6:0] value_s, value_m, value_h;
@@ -22,7 +22,6 @@ module top_digitalclock (
       rst,
       clk,
       quick,
-      toggle,
       dll_clk
   );
 
@@ -54,6 +53,7 @@ module top_digitalclock (
       value_s % 10,
       seg_s1
   );
+
   seg7 m10 (
       value_m / 10,
       seg_m10
@@ -62,6 +62,7 @@ module top_digitalclock (
       value_m % 10,
       seg_m1
   );
+
   seg7 h10 (
       value_h / 10,
       seg_h10

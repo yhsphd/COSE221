@@ -11,7 +11,8 @@ module top_stopwatch (
     seg_m10
 );
 
-  input rst, clk, quick, start_stop;
+  input rst, clk, start_stop;
+  input [3:0] quick;
   output [6:0] seg_s001, seg_s01, seg_s1, seg_s10, seg_m1, seg_m10;
 
   wire [6:0] value_s001, value_s, value_m;
@@ -63,7 +64,7 @@ module top_stopwatch (
       value_s % 10,
       seg_s1
   );
-  
+
   seg7 m10 (
       value_m / 10,
       seg_m10
